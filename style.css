@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap')
+/*CSS   Reset*/
+*{
+    margin:0;
+    padding:0;
+}
+/*CSS Variables*/
+:root{
+    --navbar-height:29px;    
+   
+}
+
+header {
+  
+    text-align: center;
+    color: white;
+
+        background-image: url('header1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+        opacity: 0.8;
+  }
+  
+  footer {
+  
+    text-align: center;
+    color: white;
+    align-items: end;
+    position: relative;
+        background-image: url('header1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+        opacity: 0.8;
+      
+      
+  }
+/*Navigation  Bar*/
+#navbar{
+    display:flex;
+    
+  align-items:center;
+ justify-content: center;
+    
+}
+/*Navigation    Bar:Logo  and Image*/
+#logo{
+    height:100%;
+    width:100%;
+    margin:10px 34px;
+}
+#logo   img{
+    height:99px;
+    margin:3px 6px;
+}
+
+#navbar ul{
+    display:flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar::before{
+    content:"";
+    background-color:black ;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    padding-left: 0;
+    opacity:0.89;
+    align-self: auto;
+
+}
+#navbar ul  li{
+    color:black;
+
+    list-style:none;
+    font-size:1.3rem ;
+    padding:3px 22px;
+    text-align:center ;
+}
+#navbar ul  li  a:hover{
+    color:black;
+    background-color: white;
+    display:block;
+    padding:3px 22px;
+    border-radius:20px;
+    text-decoration:none;
+}
+#home{
+    display:flex;
+    flex-direction:column;
+    padding:3px 200px;
+    justify-content:center;
+    align-items:center;
+}
+#home::before{
+    content:"";
+    position:absolute;
+    background:url('bg2.jpg')   no-repeat   center  center/cover;
+    
+    background-attachment: fixed;  
+    background-size: cover;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.89;
+
+}
+
+home   h1{
+    color:white;
+    text-align:center;
+
+}
+home   p{
+    color:white;
+    text-align:center;
+    font-size: 1.5rem;
+
+}
+.h-primary{
+    font-size:2.8rem;
+    padding:12px;
+
+}
+#signup {
+    background-color: yellow; 
+    color: black; 
+   
+  }
+/* Add custom CSS styles here */
+#gallery {
+    padding: 20px;
+  }
+  
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .image {
+    /* Add styling for each image container */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  /* Add custom CSS styles here */
+
+  
+ 

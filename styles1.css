@@ -1,0 +1,84 @@
+*{
+  box-sizing:border-box;
+
+}
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.grid-container{
+display:flex;
+flex-wrap:wrap;
+/*Now, applying flex: 0 1 60%; to a flex item means:
+
+flex-grow: 0, indicating that the item won't grow to fill any extra space.
+flex-shrink: 1, allowing the item to shrink if necessary.
+flex-basis: 60%, specifying that the item should initially take up 60% 
+of the available space along the main axis of the flex container.*/
+
+flex:0  1 60%;
+background-color:#02070a ;
+min-width:50px;
+}
+
+.buttons,.result
+{
+  display:flex;
+  flex-wrap:wrap;
+  flex:0  1 60%;
+  
+}
+.result{
+  height:50px;
+  border:1px  solid black;
+  justify-content:center;
+  align-items:center;
+  /*emGreater1.5WithRespectToTheParertFontSize*/
+  font-size:1.5em;
+  background:#000;
+  color:#fff;
+  /*left-right_pading=10
+  top-bottom=0;*/
+  padding:0 10px;
+}
+.button{
+  display:flex;
+  border-radius: 50px;
+  flex:0  1 25%;
+  justify-content:center;
+  align-items:center;
+  height:50px;
+  border:1px  solid black;
+  border-top:none;
+  border-bottom:none;
+  border-left:none;
+  cursor:pointer;
+  background:-webkit-linear-gradient(top,#d2d2d2,#ddd);
+  font-size:2em;
+}
+.button:hover{
+  background-color: purple;
+  color: grey;
+}
+
+.button:nth-child(4n+1){
+  border-radius: 50px;
+  border: left 1px  solid black;
+
+}
+.button:nth-child(4n),.button:last-child{
+  border-radius: 50px;
+  background:#d2d2d2;
+  color:#000;
+}
+.zero-btn{
+  flex-grow:2;
+}
+.doubleBordered{
+  border:1px  solid black;
+}
+
+

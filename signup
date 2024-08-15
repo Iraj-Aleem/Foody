@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html   lang="en"   >
+
+<head>
+    <meta   charset="UTF-8">
+    <meta   name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta   http-equiv="X-UA-Compatible"    content="ie=edge"   >
+    <title>COMSATS Admission Form</title>
+    <link	rel="stylesheet"	href="style.css"    >
+    <style>
+        h1 {
+          text-align: left;
+          color: purple; /* Changing the color to violet */
+        }
+        h2 {
+          text-align: left;
+          color: rgb(59, 5, 145); /* Changing the color to violet */
+        }
+        body{
+            padding: 0;
+            margin:0;
+
+        }
+        .form-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0px;
+        background-color: #f0f0f0;
+    }
+
+      </style>
+</head>
+<body   >
+    
+    <div   class=".form-container" align="left">
+    <center><h1>COMSATS UNIVERSITY</h1></center>
+    <img    src="logo1.jpg"  alt="download"  width="500"  height="100" align="left">
+  
+    
+  
+   
+  
+    <hr>
+    <marquee    onmouseover="this.stop();"    onmouseout="this.start();"    scrollamount="12">
+    <img    src="new1.png"  height="20"    width="20"/>&nbsp;&nbsp;ADMISSION  FORM    REGISTRATION    FORM</marquee>
+   <hr>
+   <center><h2>Admission    Form<h2></center>
+
+    <form   action="result.html"    method="GET">  
+        <div    align="center">
+        <table  align="left">
+            <tr>
+                <td>
+    
+            <label  for="name">Name</label>
+            <input  type="text"  name="name" id="name"  required>
+                </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label>Password
+           <input  type="password"  name="password" id="password">
+            </label>
+        </td>  
+       
+    </tr>
+    <tr>
+        <td>
+            <label  for="email">Email</label>
+            <input  type="email"  name="email" id="email"  required>
+           
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label  for="age">Age</label>
+            <input  type="number"  name="age" id="age"  min="1" max="200"   step="5"  required>
+           
+        </tr>
+    </td>
+    <tr>
+        <td>
+        <label  for="date">BirthDate        </label>
+        <input  type="date" name="date" id="date"   min="2019-06-10">  
+        </td>
+    </td>
+    <tr>
+        <td>
+            Gender:
+          
+                <label  for="male">Male</label>                
+                <input  type="radio"    name="gender"   id="male"   value="male">
+               
+       
+                <label  for="female">Female</label>                
+                <input  type="radio"    name="gender"   id="female"   value="female">
+        </tr>
+    </td>
+   
+
+            <tr>
+                <td>
+                <label  for="file">File</label>
+                <input  id="file"   type="file" name="file">
+            </tr>
+        </td>   
+        
+    <tr>
+<td>    
+        <button>Submit</button>
+    </tr>
+</td>    
+    </form>
+</body>
+
+</html>

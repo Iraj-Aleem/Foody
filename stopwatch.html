@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <div    id="stopwatch">00:00:00</div>
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="stopStopwatch()">Stop</button>
+        <button onclick="resetStopwatch()">Reset</button>
+    <script>
+        var startTime;
+        var stopwatchInterval;
+        var elapsedPausedTime=0;
+
+        function    startStopwatch(){
+            if(!stopwatchInterval){
+                startStopwatch=new  Date.getTime()  -   elapsedPausedTime;
+                stopwatchInterval=setInternal(updateStopwatch,1000);
+
+            }
+        }
+        function    stopStopwatch(){
+            clearInterval(stopwatchInterval);
+            elapsedPausedTime=new   Date().getTime()    -   startTime;
+            stopwatchInterval=null;
+        }
+        function    resetStopwatch(){
+            stopStopwatch();
+            elapsedPausedTime=0;
+            document.getElementById("stopwatch").innerHTML="00:00:00";
+        }
+    </script>    
+    
+    </body>
+        <html>
+
